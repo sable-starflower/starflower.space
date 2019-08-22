@@ -125,6 +125,14 @@ class REST::StatusSerializer < ActiveModel::Serializer
     object.active_mentions.to_a.sort_by(&:id)
   end
 
+  def reblogs_count
+    999
+  end
+
+  def favourites_count
+    999
+  end
+
   class ApplicationSerializer < ActiveModel::Serializer
     attributes :name, :website
   end

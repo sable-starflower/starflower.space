@@ -187,12 +187,7 @@ class DetailedStatus extends ImmutablePureComponent {
       reblogLink = (
         <React.Fragment>
           <React.Fragment> · </React.Fragment>
-          <Link to={`/statuses/${status.get('id')}/reblogs`} className='detailed-status__link'>
             <Icon id={reblogIcon} />
-            <span className='detailed-status__reblogs'>
-              <AnimatedNumber value={status.get('reblogs_count')} />
-            </span>
-          </Link>
         </React.Fragment>
       );
     } else {
@@ -201,30 +196,17 @@ class DetailedStatus extends ImmutablePureComponent {
           <React.Fragment> · </React.Fragment>
           <a href={`/interact/${status.get('id')}?type=reblog`} className='detailed-status__link' onClick={this.handleModalLink}>
             <Icon id={reblogIcon} />
-            <span className='detailed-status__reblogs'>
-              <AnimatedNumber value={status.get('reblogs_count')} />
-            </span>
           </a>
         </React.Fragment>
       );
     }
 
     if (this.context.router) {
-      favouriteLink = (
-        <Link to={`/statuses/${status.get('id')}/favourites`} className='detailed-status__link'>
-          <Icon id='star' />
-          <span className='detailed-status__favorites'>
-            <AnimatedNumber value={status.get('favourites_count')} />
-          </span>
-        </Link>
-      );
+      favouriteLink = <Icon id='star' />;
     } else {
       favouriteLink = (
         <a href={`/interact/${status.get('id')}?type=favourite`} className='detailed-status__link' onClick={this.handleModalLink}>
           <Icon id='star' />
-          <span className='detailed-status__favorites'>
-            <AnimatedNumber value={status.get('favourites_count')} />
-          </span>
         </a>
       );
     }

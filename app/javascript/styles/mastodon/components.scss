@@ -816,6 +816,16 @@
   vertical-align: middle;
 }
 
+.status__wrapper-favorited {
+  background: lightgoldenrodyellow;
+}
+
+.status__wrapper-favorited .status__content,
+.status__wrapper-favorited .status__display-name,
+.status__wrapper-favorited .status__display-name strong {
+  color: #000;
+}
+
 .status__wrapper--filtered {
   color: $dark-text-color;
   border: 0;

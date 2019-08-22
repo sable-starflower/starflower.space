@@ -32,7 +32,7 @@
         "id": "notification.mention"
       },
       {
-        "defaultMessage": "{count} notifications",
+        "defaultMessage": "{count} bloops",
         "id": "notifications.group"
       }
     ],
@@ -57,15 +57,15 @@
         "id": "account.unblock"
       },
       {
-        "defaultMessage": "Unmute @{name}",
+        "defaultMessage": "Unward @{name}",
         "id": "account.unmute"
       },
       {
-        "defaultMessage": "Mute notifications from @{name}",
+        "defaultMessage": "Ward bloops from @{name}",
         "id": "account.mute_notifications"
       },
       {
-        "defaultMessage": "Unmute notifications from @{name}",
+        "defaultMessage": "Unward bloops from @{name}",
         "id": "account.unmute_notifications"
       }
     ],
@@ -266,15 +266,15 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Delete",
+        "defaultMessage": "Dissolve",
         "id": "status.delete"
       },
       {
-        "defaultMessage": "Delete & re-draft",
+        "defaultMessage": "Dissolve & re-craft",
         "id": "status.redraft"
       },
       {
-        "defaultMessage": "Direct message @{name}",
+        "defaultMessage": "Secretly glimmer @{name}",
         "id": "status.direct"
       },
       {
@@ -282,7 +282,7 @@
         "id": "status.mention"
       },
       {
-        "defaultMessage": "Mute @{name}",
+        "defaultMessage": "Ward @{name}",
         "id": "account.mute"
       },
       {
@@ -306,27 +306,27 @@
         "id": "status.replyAll"
       },
       {
-        "defaultMessage": "Boost",
+        "defaultMessage": "Amplify",
         "id": "status.reblog"
       },
       {
-        "defaultMessage": "Boost to original audience",
+        "defaultMessage": "Amplify to original audience",
         "id": "status.reblog_private"
       },
       {
-        "defaultMessage": "Unboost",
+        "defaultMessage": "Sublimate",
         "id": "status.cancel_reblog_private"
       },
       {
-        "defaultMessage": "This post cannot be boosted",
+        "defaultMessage": "This glimmer cannot be amplified",
         "id": "status.cannot_reblog"
       },
       {
-        "defaultMessage": "Favourite",
+        "defaultMessage": "Zap",
         "id": "status.favourite"
       },
       {
-        "defaultMessage": "Expand this status",
+        "defaultMessage": "Expand this glimmer",
         "id": "status.open"
       },
       {
@@ -334,11 +334,11 @@
         "id": "status.report"
       },
       {
-        "defaultMessage": "Mute conversation",
+        "defaultMessage": "Ward thread",
         "id": "status.mute_conversation"
       },
       {
-        "defaultMessage": "Unmute conversation",
+        "defaultMessage": "Unward thread",
         "id": "status.unmute_conversation"
       },
       {
@@ -358,11 +358,11 @@
         "id": "status.admin_account"
       },
       {
-        "defaultMessage": "Open this status in the moderation interface",
+        "defaultMessage": "Open this glimmer in the moderation interface",
         "id": "status.admin_status"
       },
       {
-        "defaultMessage": "Copy link to status",
+        "defaultMessage": "Copy link to glimmer",
         "id": "status.copy"
       }
     ],
@@ -392,7 +392,7 @@
         "id": "regeneration_indicator.label"
       },
       {
-        "defaultMessage": "Your home feed is being prepared!",
+        "defaultMessage": "Your home glimmerstream is being prepared!",
         "id": "regeneration_indicator.sublabel"
       }
     ],
@@ -405,11 +405,11 @@
         "id": "status.filtered"
       },
       {
-        "defaultMessage": "Pinned toot",
+        "defaultMessage": "Pinned glimmer",
         "id": "status.pinned"
       },
       {
-        "defaultMessage": "{name} boosted",
+        "defaultMessage": "{name} amplified",
         "id": "status.reblogged_by"
       },
       {
@@ -439,7 +439,7 @@
         "id": "confirmations.domain_block.confirm"
       },
       {
-        "defaultMessage": "Are you really, really sure you want to block the entire {domain}? In most cases a few targeted blocks or mutes are sufficient and preferable.",
+        "defaultMessage": "Are you really, really sure you want to block the entire {domain}? In most cases a few targeted blocks or wards are sufficient and preferable.",
         "id": "confirmations.domain_block.message"
       }
     ],
@@ -448,19 +448,19 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Delete",
+        "defaultMessage": "Dissolve",
         "id": "confirmations.delete.confirm"
       },
       {
-        "defaultMessage": "Are you sure you want to delete this status?",
+        "defaultMessage": "Are you sure you want to dissolve this glimmer?",
         "id": "confirmations.delete.message"
       },
       {
-        "defaultMessage": "Delete & redraft",
+        "defaultMessage": "Dissolve & re-craft",
         "id": "confirmations.redraft.confirm"
       },
       {
-        "defaultMessage": "Are you sure you want to delete this status and re-draft it? Favourites and boosts will be lost, and replies to the original post will be orphaned.",
+        "defaultMessage": "Are you sure you want to dissolve this glimmer and re-craft it? Zaps and amplifications will be lost, and replies to the original glimmer will be orphaned.",
         "id": "confirmations.redraft.message"
       },
       {
@@ -472,7 +472,7 @@
         "id": "confirmations.reply.confirm"
       },
       {
-        "defaultMessage": "Replying now will overwrite the message you are currently composing. Are you sure you want to proceed?",
+        "defaultMessage": "Replying now will overwrite the glimmer you are currently crafting. Are you sure you want to proceed?",
         "id": "confirmations.reply.message"
       },
       {
@@ -489,11 +489,11 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Toots",
+        "defaultMessage": "Glimmers",
         "id": "account.posts"
       },
       {
-        "defaultMessage": "Toots and replies",
+        "defaultMessage": "Glimmers and replies",
         "id": "account.posts_with_replies"
       },
       {
@@ -539,7 +539,7 @@
         "id": "confirmations.block.message"
       },
       {
-        "defaultMessage": "Are you really, really sure you want to block the entire {domain}? In most cases a few targeted blocks or mutes are sufficient and preferable. You will not see content from that domain in any public timelines or your notifications. Your followers from that domain will be removed.",
+        "defaultMessage": "Are you really, really sure you want to block the entire {domain}? In most cases a few targeted blocks or wards are sufficient and preferable. You will not see content from that station in any public glimmerstreams or bloops. Your followers from that station will be removed.",
         "id": "confirmations.domain_block.message"
       }
     ],
@@ -552,7 +552,7 @@
         "id": "empty_column.account_unavailable"
       },
       {
-        "defaultMessage": "No toots here!",
+        "defaultMessage": "No glimmers here!",
         "id": "empty_column.account_timeline"
       }
     ],
@@ -585,7 +585,7 @@
         "id": "account.link_verified_on"
       },
       {
-        "defaultMessage": "This account privacy status is set to locked. The owner manually reviews who can follow them.",
+        "defaultMessage": "This aspect's privacy status is set to locked. The aspect manually reviews who can follow them.",
         "id": "account.locked_info"
       },
       {
@@ -593,11 +593,11 @@
         "id": "account.mention"
       },
       {
-        "defaultMessage": "Direct message @{name}",
+        "defaultMessage": "Secretly glimmer @{name}",
         "id": "account.direct"
       },
       {
-        "defaultMessage": "Unmute @{name}",
+        "defaultMessage": "Unward @{name}",
         "id": "account.unmute"
       },
       {
@@ -605,7 +605,7 @@
         "id": "account.block"
       },
       {
-        "defaultMessage": "Mute @{name}",
+        "defaultMessage": "Ward @{name}",
         "id": "account.mute"
       },
       {
@@ -629,15 +629,15 @@
         "id": "account.unblock_domain"
       },
       {
-        "defaultMessage": "Hide boosts from @{name}",
+        "defaultMessage": "Hide amplifications from @{name}",
         "id": "account.hide_reblogs"
       },
       {
-        "defaultMessage": "Show boosts from @{name}",
+        "defaultMessage": "Show amplifications from @{name}",
         "id": "account.show_reblogs"
       },
       {
-        "defaultMessage": "Pinned toots",
+        "defaultMessage": "Pinned glimmers",
         "id": "navigation_bar.pins"
       },
       {
@@ -649,23 +649,23 @@
         "id": "navigation_bar.follow_requests"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Zaps",
         "id": "navigation_bar.favourites"
       },
       {
-        "defaultMessage": "Lists",
+        "defaultMessage": "Glimmerstreams",
         "id": "navigation_bar.lists"
       },
       {
-        "defaultMessage": "Blocked users",
+        "defaultMessage": "Blocked aspects",
         "id": "navigation_bar.blocks"
       },
       {
-        "defaultMessage": "Hidden domains",
+        "defaultMessage": "Hidden stations",
         "id": "navigation_bar.domain_blocks"
       },
       {
-        "defaultMessage": "Muted users",
+        "defaultMessage": "Muted aspects",
         "id": "navigation_bar.mutes"
       },
       {
@@ -677,7 +677,7 @@
         "id": "account.unendorse"
       },
       {
-        "defaultMessage": "Add or Remove from lists",
+        "defaultMessage": "Add or Remove from glimmerstreams",
         "id": "account.add_or_remove_from_list"
       },
       {
@@ -693,11 +693,11 @@
         "id": "account.blocked"
       },
       {
-        "defaultMessage": "Muted",
+        "defaultMessage": "Warded",
         "id": "account.muted"
       },
       {
-        "defaultMessage": "Domain hidden",
+        "defaultMessage": "Station hidden",
         "id": "account.domain_blocked"
       },
       {
@@ -705,7 +705,7 @@
         "id": "account.badges.bot"
       },
       {
-        "defaultMessage": "Toots",
+        "defaultMessage": "Glimmers",
         "id": "account.posts"
       },
       {
@@ -722,11 +722,11 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Blocked users",
+        "defaultMessage": "Blocked aspects",
         "id": "column.blocks"
       },
       {
-        "defaultMessage": "You haven't blocked any users yet.",
+        "defaultMessage": "You haven't blocked any aspects yet.",
         "id": "empty_column.blocks"
       }
     ],
@@ -744,11 +744,11 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Local timeline",
+        "defaultMessage": "Stellar glimmerstream",
         "id": "column.community"
       },
       {
-        "defaultMessage": "The local timeline is empty. Write something publicly to get the ball rolling!",
+        "defaultMessage": "The stellar glimmerstream is empty.",
         "id": "empty_column.community"
       }
     ],
@@ -761,7 +761,7 @@
         "id": "account.edit_profile"
       },
       {
-        "defaultMessage": "Pinned toots",
+        "defaultMessage": "Pinned glimmers",
         "id": "navigation_bar.pins"
       },
       {
@@ -773,27 +773,27 @@
         "id": "navigation_bar.follow_requests"
       },
       {
-        "defaultMessage": "Favourites",
+        "defaultMessage": "Zaps",
         "id": "navigation_bar.favourites"
       },
       {
-        "defaultMessage": "Lists",
+        "defaultMessage": "Glimmerstreams",
         "id": "navigation_bar.lists"
       },
       {
-        "defaultMessage": "Blocked users",
+        "defaultMessage": "Blocked aspects",
         "id": "navigation_bar.blocks"
       },
       {
-        "defaultMessage": "Hidden domains",
+        "defaultMessage": "Hidden stations",
         "id": "navigation_bar.domain_blocks"
       },
       {
-        "defaultMessage": "Muted users",
+        "defaultMessage": "Warded aspects",
         "id": "navigation_bar.mutes"
       },
       {
-        "defaultMessage": "Muted words",
+        "defaultMessage": "Warded words",
         "id": "navigation_bar.filters"
       }
     ],
@@ -810,7 +810,7 @@
         "id": "compose_form.spoiler_placeholder"
       },
       {
-        "defaultMessage": "Toot",
+        "defaultMessage": "Shine",
         "id": "compose_form.publish"
       },
       {
@@ -943,7 +943,7 @@
         "id": "privacy.public.short"
       },
       {
-        "defaultMessage": "Post to public timelines",
+        "defaultMessage": "Post to public glimmerstreams",
         "id": "privacy.public.long"
       },
       {
@@ -951,7 +951,7 @@
         "id": "privacy.unlisted.short"
       },
       {
-        "defaultMessage": "Do not show in public timelines",
+        "defaultMessage": "Do not show in public glimmerstreams",
         "id": "privacy.unlisted.long"
       },
       {
@@ -1001,7 +1001,7 @@
         "id": "search_results.accounts"
       },
       {
-        "defaultMessage": "Toots",
+        "defaultMessage": "Glimmers",
         "id": "search_results.statuses"
       },
       {

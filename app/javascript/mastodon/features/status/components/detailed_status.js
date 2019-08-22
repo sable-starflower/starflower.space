@@ -159,54 +159,6 @@ export default class DetailedStatus extends ImmutablePureComponent {
       applicationLink = <span> · <a className='detailed-status__application' href={status.getIn(['application', 'website'])} target='_blank' rel='noopener'>{status.getIn(['application', 'name'])}</a></span>;
     }
 
-    if (status.get('visibility') === 'direct') {
-      reblogIcon = 'envelope';
-    } else if (status.get('visibility') === 'private') {
-      reblogIcon = 'lock';
-    }
-
-    if (status.get('visibility') === 'private') {
-      reblogLink = <Icon id={reblogIcon} />;
-    } else if (this.context.router) {
-      reblogLink = (
-        <Link to={`/statuses/${status.get('id')}/reblogs`} className='detailed-status__link'>
-          <Icon id={reblogIcon} />
-          <span className='detailed-status__reblogs'>
-            <FormattedNumber value={status.get('reblogs_count')} />
-          </span>
-        </Link>
-      );
-    } else {
-      reblogLink = (
-        <a href={`/interact/${status.get('id')}?type=reblog`} className='detailed-status__link' onClick={this.handleModalLink}>
-          <Icon id={reblogIcon} />
-          <span className='detailed-status__reblogs'>
-            <FormattedNumber value={status.get('reblogs_count')} />
-          </span>
-        </a>
-      );
-    }
-
-    if (this.context.router) {
-      favouriteLink = (
-        <Link to={`/statuses/${status.get('id')}/favourites`} className='detailed-status__link'>
-          <Icon id='star' />
-          <span className='detailed-status__favorites'>
-            <FormattedNumber value={status.get('favourites_count')} />
-          </span>
-        </Link>
-      );
-    } else {
-      favouriteLink = (
-        <a href={`/interact/${status.get('id')}?type=favourite`} className='detailed-status__link' onClick={this.handleModalLink}>
-          <Icon id='star' />
-          <span className='detailed-status__favorites'>
-            <FormattedNumber value={status.get('favourites_count')} />
-          </span>
-        </a>
-      );
-    }
-
     return (
       <div style={outerStyle}>
         <div ref={this.setRef} className={classNames('detailed-status', { compact })}>
@@ -222,7 +174,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
           <div className='detailed-status__meta'>
             <a className='detailed-status__datetime' href={status.get('url')} target='_blank' rel='noopener'>
               <FormattedDate value={new Date(status.get('created_at'))} hour12={false} year='numeric' month='short' day='2-digit' hour='2-digit' minute='2-digit' />
-            </a>{applicationLink} · {reblogLink} · {favouriteLink}
+            </a>{applicationLink}
           </div>
         </div>
       </div>

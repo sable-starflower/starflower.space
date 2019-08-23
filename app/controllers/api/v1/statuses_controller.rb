@@ -44,12 +44,17 @@ class Api::V1::StatusesController < Api::BaseController
   end
 
   def create
+    if current_user.account.username == "sable" and status_params[:in_reply_to_id].blank? and status_params[:spoiler_text].blank?
+      spoiler = "sable's nonsense garbage words"
+    else
+      spoiler = status_params[:spoiler_text]
+    end
     @status = PostStatusService.new.call(current_user.account,
                                          text: status_params[:status],
                                          thread: status_params[:in_reply_to_id].blank? ? nil : Status.find(status_params[:in_reply_to_id]),
                                          media_ids: status_params[:media_ids],
                                          sensitive: status_params[:sensitive],
-                                         spoiler_text: status_params[:spoiler_text],
+                                         spoiler_text: spoiler,
                                          visibility: status_params[:visibility],
                                          scheduled_at: status_params[:scheduled_at],
                                          application: doorkeeper_token.application,

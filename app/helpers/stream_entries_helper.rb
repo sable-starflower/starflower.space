@@ -71,18 +71,18 @@ module StreamEntriesHelper
   def account_description(account)
     prepend_str = [
       [
-        number_to_human(account.statuses_count, strip_insignificant_zeros: true),
-        I18n.t('accounts.posts', count: account.statuses_count),
+        number_to_human(999, strip_insignificant_zeros: true),
+        I18n.t('accounts.posts', count: 999),
       ].join(' '),
 
       [
-        number_to_human(account.following_count, strip_insignificant_zeros: true),
-        I18n.t('accounts.following', count: account.following_count),
+        number_to_human(999, strip_insignificant_zeros: true),
+        I18n.t('accounts.following', count: 999),
       ].join(' '),
 
       [
-        number_to_human(account.followers_count, strip_insignificant_zeros: true),
-        I18n.t('accounts.followers', count: account.followers_count),
+        number_to_human(999, strip_insignificant_zeros: true),
+        I18n.t('accounts.followers', count: 999),
       ].join(' '),
     ].join(', ')
 

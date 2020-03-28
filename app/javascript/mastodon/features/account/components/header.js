@@ -173,11 +173,6 @@ class Header extends ImmutablePureComponent {
       menu.push(null);
     }
 
-    if ('share' in navigator) {
-      menu.push({ text: intl.formatMessage(messages.share, { name: account.get('username') }), action: this.handleShare });
-      menu.push(null);
-    }
-
     if (account.get('id') === me) {
       menu.push({ text: intl.formatMessage(messages.edit_profile), href: '/settings/profile' });
       menu.push({ text: intl.formatMessage(messages.preferences), href: '/settings/preferences' });
@@ -311,20 +306,6 @@ class Header extends ImmutablePureComponent {
               )}
 
               {account.get('note').length > 0 && account.get('note') !== '<p></p>' && <div className='account__header__content' dangerouslySetInnerHTML={content} />}
-            </div>
-
-            <div className='account__header__extra__links'>
-              <NavLink isActive={this.isStatusesPageActive} activeClassName='active' to={`/accounts/${account.get('id')}`} title={intl.formatNumber(account.get('statuses_count'))}>
-                <strong>{shortNumberFormat(account.get('statuses_count'))}</strong> <FormattedMessage id='account.posts' defaultMessage='Toots' />
-              </NavLink>
-
-              <NavLink exact activeClassName='active' to={`/accounts/${account.get('id')}/following`} title={intl.formatNumber(account.get('following_count'))}>
-                <strong>{shortNumberFormat(account.get('following_count'))}</strong> <FormattedMessage id='account.follows' defaultMessage='Follows' />
-              </NavLink>
-
-              <NavLink exact activeClassName='active' to={`/accounts/${account.get('id')}/followers`} title={intl.formatNumber(account.get('followers_count'))}>
-                <strong>{shortNumberFormat(account.get('followers_count'))}</strong> <FormattedMessage id='account.followers' defaultMessage='Followers' />
-              </NavLink>
             </div>
           </div>
         </div>

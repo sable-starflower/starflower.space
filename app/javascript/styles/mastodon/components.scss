@@ -968,6 +968,18 @@
   color: #000;
 }
 
+.status__wrapper-reblogged,
+.status__wrapper-reblogged .detailed-status,
+.status__wrapper-reblogged .detailed-status__action-bar {
+  background: lightskyblue;
+}
+
+.status__wrapper-reblogged .status__content,
+.status__wrapper-reblogged .status__display-name,
+.status__wrapper-reblogged .status__display-name strong {
+  color: #000;
+}
+
 .status__wrapper--filtered {
   color: $dark-text-color;
   border: 0;

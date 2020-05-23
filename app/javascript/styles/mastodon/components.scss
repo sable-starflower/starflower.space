@@ -946,6 +946,54 @@
   vertical-align: middle;
 }
 
+.status__wrapper-favorited,
+.status__wrapper-favorited .detailed-status,
+.status__wrapper-favorited .detailed-status__action-bar {
+  background: lightgoldenrodyellow;
+}
+
+.notification .status__wrapper-favorited,
+.notification .status__wrapper-favorited .detailed-status,
+.notification .status__wrapper-favorited .detailed-status__action-bar {
+  background: unset;
+}
+
+.status__wrapper-favorited .status__content,
+.status__wrapper-favorited .status__display-name,
+.status__wrapper-favorited .status__display-name strong {
+  color: #000;
+}
+
+.notification .status__wrapper-favorited .status__content,
+.notification .status__wrapper-favorited .status__display-name,
+.notification .status__wrapper-favorited .status__display-name strong {
+  color: unset;
+}
+
+.status__wrapper-reblogged,
+.status__wrapper-reblogged .detailed-status,
+.status__wrapper-reblogged .detailed-status__action-bar {
+  background: #EEFFFF;
+}
+
+.notification .status__wrapper-reblogged,
+.notification .status__wrapper-reblogged .detailed-status,
+.notification .status__wrapper-reblogged .detailed-status__action-bar {
+  background: unset;
+}
+
+.status__wrapper-reblogged .status__content,
+.status__wrapper-reblogged .status__display-name,
+.status__wrapper-reblogged .status__display-name strong {
+  color: #000;
+}
+
+.notification .status__wrapper-reblogged .status__content,
+.notification .status__wrapper-reblogged .status__display-name,
+.notification .status__wrapper-reblogged .status__display-name strong {
+  color: unset;
+}
+
 .status__wrapper--filtered {
   color: $dark-text-color;
   border: 0;

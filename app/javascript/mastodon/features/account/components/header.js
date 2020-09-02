@@ -187,7 +187,6 @@ class Header extends ImmutablePureComponent {
       menu.push(null);
       menu.push({ text: intl.formatMessage(messages.follow_requests), to: '/follow_requests' });
       menu.push({ text: intl.formatMessage(messages.favourites), to: '/favourites' });
-      menu.push({ text: intl.formatMessage(messages.lists), to: '/lists' });
       menu.push(null);
       menu.push({ text: intl.formatMessage(messages.mutes), to: '/mutes' });
       menu.push({ text: intl.formatMessage(messages.blocks), to: '/blocks' });
@@ -203,7 +202,6 @@ class Header extends ImmutablePureComponent {
         }
 
         menu.push({ text: intl.formatMessage(account.getIn(['relationship', 'endorsed']) ? messages.unendorse : messages.endorse), action: this.props.onEndorseToggle });
-        menu.push({ text: intl.formatMessage(messages.add_or_remove_from_list), action: this.props.onAddToList });
         menu.push(null);
       }
 
